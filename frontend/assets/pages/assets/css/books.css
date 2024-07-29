@@ -1,0 +1,250 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+.main {
+    font-family: "Barlow", sans-serif;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1px solid rgb(34, 34, 34);
+}
+
+.header-icon {
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.addresslist {
+    display: flex;
+    align-items: center;
+}
+
+.addresslist ul {
+    margin-right: 40px;
+}
+
+.addresslist ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.addresslist ul li a {
+    text-decoration: none;
+    background: gray;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 400;
+    font-family: "Barlow", sans-serif;
+}
+
+.addresslist ul li a:hover {
+    background: linear-gradient(140deg, #f08523,#e95b2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.connectWalletButton {
+    border: none;
+    background: -webkit-linear-gradient(140deg, #f08523,#e95b2b);                        
+    background: linear-gradient(140deg, #f08523,#e95b2b);
+    color: white;
+    font-size: 17px;
+    padding: 15px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 500;                                         
+}
+
+.welcome-page {
+    padding: 100px 0;
+}
+
+.welcome-title h1{
+    color: rgb(231, 231, 231);
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.book-shop {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.book-shop-name-title {
+    margin-top: auto;
+}
+
+.book-shop-name-title h1 {
+    
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-image: linear-gradient(140deg, #f08523,#e95b2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.book-shop-description-title {
+    margin-top: 20px;
+    color: rgb(202, 202, 202);
+    padding-left: 5px;
+}
+
+.button-lets {
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.button-go {
+    border: none;
+    padding: 10px;
+    background: -webkit-linear-gradient(140deg, #f08523,#e95b2b);                        
+    background: linear-gradient(140deg, #f08523,#e95b2b);
+    font-size: 16px;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popular-books {
+    padding: 70px 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.popular-body {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pop-title h1 {
+    color: white;
+    font-weight: 500;
+}
+
+.buttons2 {
+    display: flex;
+}
+
+.buttons2 button {
+    border: 0.1px solid gray;
+    padding: 8px;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.block-image img {
+    border-radius: 5px;
+    width: 100%;
+    max-height: 250px; /* Устанавливаем максимальную высоту для изображения */
+    
+    display: block;
+}
+
+.popularity-block {
+    cursor: pointer;
+    width: 260px;
+    height: 400px; /* Увеличил высоту для правильного размещения всех элементов */
+    transition: transform 0.5s;
+    border-radius: 4px;
+    border: 0.1px solid rgb(24, 24, 24);
+    margin-right: 30px;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.pop-body {
+    text-align: center;
+}
+
+.book-name {
+    margin-top: 10px;
+}
+
+.book-name h1 {
+    color: white;
+    font-size: 19px;
+}
+
+.author-name h1 {
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+.author-title {
+    margin-top: 10px;
+}
+
+.author-title p {
+    color: gray;
+    font-size: 14px;
+}
+
+.ok {
+    margin: 12px auto 0;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    transition: background-color 0.5s, transform 0.5s;
+    border-radius: 5px;
+}
+
+.read-button {
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+    height: 30px;
+    width: 100px;
+    background-image: linear-gradient(140deg, #f08523, #e95b2b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background 0.5s;
+}
+
+.popularity-block:hover {
+    transform: scale(1.04);
+    border: 0.1px solid #e95b2b;
+    box-shadow: 0 0 10px rgba(233, 91, 43, 0.8);
+}
+
+.popularity-block:hover .ok {
+    background: linear-gradient(140deg, #f08523, #e95b2b);
+    transform: translateY(18px);
+}
+
+.popularity-block:hover .read-button {
+    background: white;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

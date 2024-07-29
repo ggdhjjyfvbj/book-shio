@@ -1,0 +1,170 @@
+.second-main-page {
+    background-color: rgb(249, 246, 242);
+}
+
+.interactive-reading-container {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+    width: 60%;
+    padding: 100px 0;
+}
+
+.interactive-reading-container-second {
+    background-color: #b99361;
+    width: 550px;
+    position: relative;
+    height: 720px;
+    border-radius: 10px;
+}
+
+.interactive {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.interactive-reading-string p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.interactive-reading-theme h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.interactive-reading-decription p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.interactive-reading-button button{
+    padding: 15px 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: #b99361;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+}
+
+.dog-image {
+    margin-top: 18px;
+}
+
+.photos img {
+    border-radius: 10px;
+}
+
+.favourit-functions-container {
+    padding: 100px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.favourit-func-string {
+    padding-bottom: 30px;
+}
+
+.favourit-func-string h1 {
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.favourit-func-description {
+    width: 80%;
+    padding-bottom: 50px;
+}
+
+.favourit-func-blocks {
+    border: 0.1px solid rgb(192, 192, 192);
+    width: 290px;
+    margin-top: 25px;
+    margin-right: 25px;
+    height: 300px;
+    position: relative;
+    display: flex;
+    border-radius: 10px;
+}
+
+.favourit-block {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 40px;
+    transform: translateX(-50%);
+}
+
+.favourit-blocks-icon {
+    margin-bottom: 20px;
+    color: #b99361;
+}
+
+.favourit-blocks-string h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.favourit-blocks-description {
+    margin-bottom: 20px;
+}
+
+.favourit-blocks-description p{
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.favourit-blocks-button button :is(.icon, .icon svg) {
+    display: flex;
+    align-items: center;
+    margin-top: 2px;
+    margin-left: 10px;
+    transition: null;
+}
+
+.favourit-blocks-button {
+    border-bottom: 0.1px solid #b99361;
+    padding-bottom: 10px;
+    width: fit-content;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.fun-wrapper {
+    width: 59%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.favourit-blocks-button button{
+    background-color: transparent;
+    color: #b99361;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    flex-direction: row-reverse;
+}
+
+.favourit-blocks-button:hover {
+    opacity: 0.7;
+}
+
+.fun-container {
+    display: flex;
+}
+
+.photoes123 {
+    display: flex;
+    align-items: center;
+}
