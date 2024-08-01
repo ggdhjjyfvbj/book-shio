@@ -1,0 +1,86 @@
+.welcome_component {
+    height: auto;
+    width: 60%;
+    padding: 100px 0;
+    margin: 0 auto;
+}
+
+
+.welcome_component_title {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.welcome_string {
+    display: block;
+    width: 50%;
+}
+
+.welcome_string_compnent {
+    color: white;
+    font-weight: 100;
+    font-family: none;
+    font-size: 40px;
+}
+
+.welcome_string_description {
+    color: #b6b6b6cc;
+    padding: 10px 2px;
+    font-size: 18px;
+    
+}
+
+.welcome_string_buttons {
+    display: flex;
+}
+
+.welcome_string_buttons button{
+    margin-right: 30px;
+    border-radius: 5px;
+    margin-top: 30px;
+    
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    padding: 15px;
+}
+
+.letsgo button :is(.icon, .icon svg) {
+    margin-left: 10px;
+    transition: null;
+}
+
+.letsgo button {
+    display: flex;
+    margin-left: 4px;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    color: #b99361;
+}
+
+
+.get_role button {
+    border: 0.1px solid gray;
+    color: white;
+    transition: color 0.9s, background-color 0.9s;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.get_role button:hover {
+    background-color: white;
+    color: #b99361;
+}
+
+.welcome_image_component {
+    width: 550px;
+    display: flex;
+    height: 500px;
+    padding: 5px;
+}
+
+.welcome_image_component img {
+    border-radius: 10px;
+}
