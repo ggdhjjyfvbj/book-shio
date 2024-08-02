@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" th:object="${userEntityDTO}">
+    <input type="text" th:field="*{username}" placeholder="username">
+    <label th:if="${#fields.hasErrors('username')}" th:errors="*{username}"></label>
+
+    <input type="email" th:field="*{email}" placeholder="email">
+    <label th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></label>
+
+    <input type="password" th:field="*{password}" placeholder="password">
+    <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}" ></label>
+
+    <input type="password" th:field="*{confirmPassword}" placeholder="confirmPassword">
+    <label th:if="${#fields.hasErrors('confirmPassword')}" th:errors="*{confirmPassword}"></label>
+
+    <button type="submit" >Зарегать</button>
+</form>
+</body>
+</html>
