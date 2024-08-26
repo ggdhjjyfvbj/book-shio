@@ -16,9 +16,22 @@ public class CreateUsers implements UsersWrapper {
     @Autowired
     PasswordEncoder passwordEncoder;
 
+    @Autowired
+    JWTService jwtService;
+
     @Override
     public void saveEntity(UsersEntity usersEntity) {
         usersEntity.setPassword(passwordEncoder.encode(usersEntity.getPassword()));
         userRepository.save(usersEntity);
+    }
+
+    @Override
+    public String generateToken(String username) {
+        return jwtService.generateToken(username);
+    }
+
+    @Override
+    public void validationCheck(String token) {
+        jwtService.validationToken(token);
     }
 }
