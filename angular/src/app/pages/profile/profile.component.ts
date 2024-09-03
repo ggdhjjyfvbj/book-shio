@@ -5,11 +5,16 @@ import {TokenService} from "../../service/token/toke.service";
 import {response} from "express";
 import {UserResponse} from "../../response/profile/UserResponse";
 import {Router} from "@angular/router";
+import {NgStyle} from "@angular/common";
 
+let token: string | null;
+let colors = ['#e95b2b', '#ff4100', '#00f87e', '#7dfb00']
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [],
+  imports: [
+    NgStyle
+  ],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })
@@ -42,6 +47,11 @@ export class ProfileComponent {
     }, 1000)
   }
 
+  style() {
+    let random = Math.floor(Math.random() * colors.length)
+    return colors[random];
+  }
+
   profile() {
     this.httpService.profile(this.tokenService.getToken())
       .subscribe(
@@ -52,4 +62,6 @@ export class ProfileComponent {
         }
       )
   }
+
+  protected readonly colors = colors;
 }
